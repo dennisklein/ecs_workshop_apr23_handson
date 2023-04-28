@@ -23,7 +23,7 @@ Repeat this in every new shell:
 
 Run the EPICS IOC:
 ```console
-python -m caproto.ioc_examples.random_walk --list-pvs
+python -m caproto.ioc_examples.random_walk --list-pvs --interface 127.0.0.1
 ```
 
 Run the MQTT broker:
@@ -33,6 +33,8 @@ amqtt
 
 Run the demo script:
 ```console
+export EPICS_CA_AUTO_ADDR_LIST=NO
+export EPICS_CA_ADDR_LIST=127.0.0.1
 python -m demo
 ```
 
