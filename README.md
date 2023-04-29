@@ -11,6 +11,7 @@
 > . env/bin/activate
 > pip install caproto
 > pip install git+https://github.com/Yakifo/amqtt.git#egg=amqtt
+> pip install windows-curses  # on Microsoft Windows operating system only
 ```
 
 Repeat this in every new shell:
